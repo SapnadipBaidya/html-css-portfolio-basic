@@ -135,10 +135,24 @@ footer{
         height: 5vh;
        
         }
-        .imgdownlogo:hover{
+        .imgdownlogo{
             transition: 1s ease-in-out;
             position: relative;
-            top:1vh;
+            
+            animation-name: logo_down_up;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes logo_down_up{
+            0%{
+                top:0vh;
+            }
+            50%{
+                top:1vh;
+            }
+            100%{
+                top:0vh;
+            }
         }
 
         .cvbtn{
@@ -146,9 +160,24 @@ footer{
             right:46vw;
             width: 150px;
             top:-13vh;
-            background-color: rgba(228, 186, 133, 0.911);
+           
             border-radius: 10px;
+            animation-name:cv_btn_anime;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
+        @keyframes cv_btn_anime {
+            0%{
+                background-color: rgba(228, 186, 133, 0.911);
+            } 50%{
+                background-color: rgba(208, 144, 65, 0.911);
+            }
+            100%{
+                background-color: rgba(228, 186, 133, 0.911);
+            }
+        }
+
+
         .cv{
             transition: 0.2s ease;
             position: absolute;
