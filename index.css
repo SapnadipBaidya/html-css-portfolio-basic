@@ -1,0 +1,406 @@
+html{
+  
+    background-color: rgba(203, 209, 211, 0.808);
+    display: flex;
+    justify-content: center;
+    animation-name:bgColor ;
+    animation-duration:6s;
+}
+
+@keyframes bgColor{
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+    25%{
+        background-color: rgb(30, 29, 29);
+    }
+    50%{
+        background-color: rgba(47, 48, 49, 0.979);
+    }
+    100%{
+        background-color: rgba(203, 209, 211, 0.808);
+    }
+}
+.DP{
+    transition:1s ease-in-out;
+    width: 25vw;
+   
+    border-radius: 20px;
+    position: relative;
+    top:-23vh;
+    left: -12.5vw;
+    z-index: 150;
+   
+}
+.DP:hover {
+    transition:0.5s ease-in-out;
+    border-radius: 50%;}
+.About{
+    transition: 0.2s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    top:-10vh;
+   
+    width:27vw;
+    opacity: 0;
+    z-index: 100;
+    position: relative;
+     left:16vw;
+     top:-70vh;
+ }
+ .DPP{
+     position: relative;
+     
+     max-width: 0px;
+     max-height:0px ;
+     
+ }
+.DPP:hover .About{
+     transition: 1s ease-in-out;
+    z-index: 100;
+     
+     display: block !important;
+     position: relative;
+     left:16vw;
+     top:-68vh;
+     height: 30vh;
+     opacity: 1;
+     
+ }
+
+ .Projects{
+    transition:0.2s ease-in-out;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    z-index: 150;
+    top:25vh;
+    width: 25vw;
+    background-color: rgba(158, 159, 160, 0.441);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 50px;
+     font-size: x-large;
+     font-weight: 600;
+     animation-name:projects ;
+     animation-duration:6s;
+  
+    
+ }
+ @keyframes projects{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+ .Projects:hover{
+     transition:0.2s ease-in-out;
+     background-color: rgb(169, 173, 177);
+     color: rgb(4, 31, 39);
+     width:35vw;
+ }
+
+.Main{
+    
+   width: 95vw;
+   height: 89vh;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(4, 31, 39);
+}
+footer{
+    position: relative;
+    top:-10vh;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 20px;
+}
+.imglogo{
+    transition: 0.4s ease-in-out;
+    width: 60px;
+}
+.imglogo:hover{
+    transition: 0.4s ease-in-out;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgba(213, 216, 64, 0.203);
+}
+.imgdownlogo{
+    transition: 1s ease-in-out;
+    width: 30px;
+}
+
+ .notice{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   position: relative;
+   top:-30vh;
+   background-color: rgba(210, 210, 67, 0.329);
+   padding: 5px;
+   border-radius: 10px;
+   margin-bottom: 15px;
+   opacity: 0;
+   animation-name: noticehover;
+   animation-duration: 6s;
+    }
+
+    @keyframes noticehover{
+        0%{
+            opacity: 0;
+        }
+       50%{
+        opacity: 1;
+       }
+        100%{
+            opacity: 0;
+        }
+    }
+    .notice:hover {
+        transition: 0.4s ease-in-out;
+        position: relative;
+        top:-28vh;
+        height: 5vh;
+       
+        }
+        .imgdownlogo{
+            transition: 1s ease-in-out;
+            position: relative;
+            
+            animation-name: logo_down_up;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+        @keyframes logo_down_up{
+            0%{
+                top:0vh;
+            }
+            50%{
+                top:1vh;
+            }
+            100%{
+                top:0vh;
+            }
+        }
+
+        .cvbtn{
+            position: relative;
+            right:51vw;
+            width: 150px;
+            top:-13vh;
+            background-color: rgba(228, 186, 133, 0.911);
+            border-radius: 10px;
+            animation-name:cv_btn_anime;
+            animation-duration: 6s;
+            
+        }
+        @keyframes cv_btn_anime {
+            0%{
+                background-color: rgba(228, 186, 133, 0.911);
+                right:46vw;
+               
+            }
+            25%{
+                background-color: rgba(208, 144, 65, 0.911);
+                right:44vw;
+                
+            }
+            50%{
+                background-color: rgba(208, 144, 65, 0.911);
+                right:46vw;
+                
+            }
+            75%{
+                background-color: rgba(208, 144, 65, 0.911);
+                right:44vw;
+                
+            }
+            100%{
+                background-color: rgba(228, 186, 133, 0.911);
+                right:51vw;;
+                
+            }
+        }
+
+
+        .cv{
+            transition: 0.2s ease;
+            position: absolute;
+            left:-1vw;
+            border-radius: 10px;
+            top:17.5vh;
+            opacity: 0;
+            width: 169px;
+            height: 70px;
+        }
+        .cv:hover{
+            transition: 0.5s ease-in-out;
+            position: absolute;
+            left:-1vw;
+            border-radius: 10px;
+            top:7vh;
+            opacity: 1;
+            width: 20vw;
+            height:50vh;
+        }
+
+        .portfolio{
+            z-index: 10;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            top:-46vh;
+            right:36vw;
+            width: 200px;
+            font-size: 120px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .port{
+            animation-name:port ;
+            color:rgba(38, 158, 214, 0.842) ;
+          animation-duration:6s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes port{
+            0%{
+                color:rgba(38, 158, 214, 0.842) ;
+            } 
+            50%{
+                color:rgba(51, 202, 182, 0.842) ;
+               }
+               75%{
+                color:rgba(28, 154, 114, 0.863) ;
+               }
+            100%{
+                color:rgba(38, 158, 214, 0.842) ;
+            }
+        }
+        .folio{
+            animation-name:folio ;
+            color:rgba(28, 154, 114, 0.863) ;
+            animation-duration:6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes folio{
+           0%{
+            color:rgba(28, 154, 114, 0.863) ;
+
+           } 
+           50%{
+            color:rgba(51, 202, 182, 0.842) ;
+           }
+           75%{
+            color:rgba(38, 158, 214, 0.842) ;
+           }
+           100%{
+            color:rgba(28, 154, 114, 0.863) ;
+           }
+        }
+.box1{
+    z-index: 10;
+        background-color: rgba(51, 155, 91, 0.587);    
+    position: absolute;
+    right:59vw;
+    width: 150px;
+    height: 150px;
+    top:1vh;
+    border-radius: 50%;
+    animation-name:box1animation ;
+    animation-duration:6s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes box1animation {
+   0%{
+    position: absolute;
+    right:59vw;
+    top:1vh;
+
+   }
+   25%{
+    position: absolute;
+    right:33vw;
+    top:1vh;
+   }
+   50%{
+    position: absolute;
+    right:33vw;
+    top:46vh;
+   }
+   75%{
+    position: absolute;
+    right:60vw;
+    top:46vh;
+   }
+
+   100%{
+    
+    position: absolute;
+    right:59vw;
+    top:1vh;
+   }
+}
+.circle1{
+    z-index: 10;
+        background-color: rgba(61, 135, 156, 0.838);    
+    position: absolute;
+    left:58vw;
+    width: 200px;
+    height: 200px;
+    top:45vh;
+    border-radius: 50%;
+    animation-name:circle1animation;
+    animation-duration:9s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes circle1animation {
+    0%{
+        position: absolute;
+        left:58vw;
+        top:45vh;
+    
+       }
+       25%{
+        position: absolute;
+        left:58vw;
+        top:1vh;
+       }
+       50%{
+        position: absolute;
+        left:30vw;
+        top:1vh;
+       }
+       75%{
+        position: absolute;
+        left:30vw;
+        top:45vh;
+       }
+    
+       100%{
+        
+        position: absolute;
+        left:58vw;
+        top:45vh;
+       }
+}
+
